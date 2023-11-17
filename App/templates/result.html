@@ -14,12 +14,13 @@
   <body>
     <main>
       <h1><span class="iDot"></span>Duplicates</h1>
-      <p>"Perfect answers with a single click!"</p>
-      <form method=post enctype=multipart/form-data>
-        <label for="myFile" id="fileSelect"> Choose PDF</label>
-        <input id="myFile" type=file name=file id="s1" multiple>
-        <input type=submit value=Solve id="select" onclick="load()">
-      </form>
+      {% for x in range(len() | int) %}
+        <tr>
+            <td>
+                <input type="text" value="{{ x }}">
+            </td>
+        </tr>
+    {% endfor %}
       <span class="loader" ></span>
     </main>
     <script>

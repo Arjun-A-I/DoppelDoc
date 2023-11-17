@@ -21,8 +21,7 @@ from itertools import combinations
 import itertools
 
 # from dotenv import load_dotenv
-OPEN_AI_API_KEY = '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'
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='')
 # load_dotenv(".env")
 
 UPLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '/uploads/'
